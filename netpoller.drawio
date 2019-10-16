@@ -1,1 +1,57 @@
-<mxfile host="www.draw.io" modified="2019-10-15T02:47:15.739Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0" version="12.1.1" etag="Dfv43T1zV51BrQCe6Bfv" type="github"><diagram id="6CCXjJKxpzkXWb-nNNO-">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2019-10-16T12:38:54.882Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0" etag="nLvMPpKOOi8hIwTsBG6o" version="12.1.1" type="github" pages="2">
+  <diagram id="6CCXjJKxpzkXWb-nNNO-" name="Page-1">
+    <mxGraphModel dx="782" dy="382" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="iPBGWowpunn-7tU2Wu3a-6" value="&lt;div align=&quot;left&quot;&gt;文件读取&lt;br&gt;File.Read&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="iPBGWowpunn-7tU2Wu3a-7" value="&lt;div align=&quot;left&quot;&gt;平台实现&lt;br&gt;File.read&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="iPBGWowpunn-7tU2Wu3a-8" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#666666&quot;&gt;os/file.go&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="50" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="iPBGWowpunn-7tU2Wu3a-9" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#666666&quot;&gt;os/file_unix.go&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="70" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wnVgFXEB193S0q1koUHZ" name="File.Read流程">
+    <mxGraphModel dx="1303" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-0"/>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-1" parent="ckL3LIoVxV53yeUhi4b4-0"/>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-2" value="Read" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="180" y="320" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-3" value="FD.read" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="340" y="320" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-4" value="Open" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="20" y="320" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-5" value="FD&lt;br&gt;pollable&lt;br&gt;... ..." style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="30" y="370" width="100" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-6" value="(File)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="60" y="300" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-8" value="(File)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="220" y="300" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-9" value="(FD)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="380" y="300" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-10" value="syscall.Read" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="640" y="150" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="ckL3LIoVxV53yeUhi4b4-11" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeColor=#000000;" vertex="1" parent="ckL3LIoVxV53yeUhi4b4-1">
+          <mxGeometry x="480" y="170" width="20" height="340" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
