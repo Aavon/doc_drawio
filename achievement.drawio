@@ -1,26 +1,26 @@
-<mxfile host="www.draw.io" modified="2019-11-03T11:42:40.583Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="q6vO1PRPo9RXOKKXporD" version="12.1.9" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-03T11:53:31.307Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0" etag="DjBx3aWcVpm80bbFSzWG" version="12.1.9" type="github" pages="1">
   <diagram id="I4vG1qmLPaPnZNt0lLWI" name="消息设计">
     <mxGraphModel dx="1675" dy="873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <object label="客户端通知" id="VZndIEhIQSD7qVyDR7WP-1">
+        <object label="事件类型" id="VZndIEhIQSD7qVyDR7WP-1">
           <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=27;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-            <mxGeometry x="1012.5" y="410" width="140" height="131" as="geometry">
+            <mxGeometry x="790" y="599.5" width="140" height="131" as="geometry">
               <mxRectangle x="240" y="490" width="50" height="26" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </object>
-        <mxCell id="VZndIEhIQSD7qVyDR7WP-2" value="Item 1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VZndIEhIQSD7qVyDR7WP-1">
+        <mxCell id="VZndIEhIQSD7qVyDR7WP-2" value="主动跟进" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VZndIEhIQSD7qVyDR7WP-1">
           <mxGeometry y="27" width="140" height="26" as="geometry"/>
         </mxCell>
-        <mxCell id="VZndIEhIQSD7qVyDR7WP-3" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VZndIEhIQSD7qVyDR7WP-1">
+        <mxCell id="VZndIEhIQSD7qVyDR7WP-3" value="下单" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VZndIEhIQSD7qVyDR7WP-1">
           <mxGeometry y="53" width="140" height="26" as="geometry"/>
         </mxCell>
-        <mxCell id="VZndIEhIQSD7qVyDR7WP-4" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VZndIEhIQSD7qVyDR7WP-1">
+        <mxCell id="VZndIEhIQSD7qVyDR7WP-7" value="跟进后下单额外奖励" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VZndIEhIQSD7qVyDR7WP-1">
           <mxGeometry y="79" width="140" height="26" as="geometry"/>
         </mxCell>
-        <mxCell id="VZndIEhIQSD7qVyDR7WP-7" value="List Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VZndIEhIQSD7qVyDR7WP-1">
+        <mxCell id="VZndIEhIQSD7qVyDR7WP-62" value="任务达成" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VZndIEhIQSD7qVyDR7WP-1">
           <mxGeometry y="105" width="140" height="26" as="geometry"/>
         </mxCell>
         <mxCell id="VZndIEhIQSD7qVyDR7WP-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.005;entryY=0.558;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VZndIEhIQSD7qVyDR7WP-11" target="VZndIEhIQSD7qVyDR7WP-14">
